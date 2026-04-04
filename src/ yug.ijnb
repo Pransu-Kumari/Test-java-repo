@@ -44,14 +44,7 @@
         }
       },
       "execution_count": 2,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {},
-          "metadata": {},
-          "execution_count": 2
-        }
-      ]
+      "outputs": []
     },
     {
       "id": "e0f15dec-5d46-46d1-ac02-6acc63d0b5ca",
@@ -263,16 +256,6 @@
         "language": "markdown",
         "id": "aa574cab-9df5-46ba-a742-674eb68369a4"
       }
-    },
-    {
-      "id": "ca181a66-5662-4b2b-a618-af11a947b8fb",
-      "cell_type": "code",
-      "source": "git init ",
-      "metadata": {
-        "language": "java"
-      },
-      "execution_count": null,
-      "outputs": []
     }
   ]
 }

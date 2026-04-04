@@ -1,0 +1,278 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 5,
+  "metadata": {
+    "language_info": {
+      "name": "java"
+    }
+  },
+  "cells": [
+    {
+      "id": "b8741973-479c-4e3a-8884-085d436a8fe1",
+      "cell_type": "code",
+      "source": "System.out.println (\"Hello \");",
+      "metadata": {
+        "language": "java",
+        "id": "b8741973-479c-4e3a-8884-085d436a8fe1",
+        "executionSummary": {
+          "executionOrder": 1,
+          "success": true
+        }
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "Hello \n"
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ]
+    },
+    {
+      "id": "be86f3df-2bd8-4986-b2c3-5e3ed036d0f8",
+      "cell_type": "code",
+      "source": "\nclass Student {\n    String name;\n    int age;\n    byte rollNumber;\n    String college;\n    \n    Student(){\n        name=\"Aditya\";\n        age=28;\n        rollNumber=102;\n        college=\"jcbust\";\n        }\n\n    void markAttendence(){\n        System.out.println(\"Attendance marked by\"+name);\n    }\n}",
+      "metadata": {
+        "language": "java",
+        "id": "be86f3df-2bd8-4986-b2c3-5e3ed036d0f8",
+        "executionSummary": {
+          "executionOrder": 2,
+          "success": true
+        }
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {},
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "id": "e0f15dec-5d46-46d1-ac02-6acc63d0b5ca",
+      "cell_type": "code",
+      "source": "Student s1=new Student();\nSystem.out.println(s1.name);\nSystem.out.println(s1.age);\nSystem.out.println(s1.rollNumber);\nSystem.out.println(s1.college); \n    ",
+      "metadata": {
+        "language": "java",
+        "id": "e0f15dec-5d46-46d1-ac02-6acc63d0b5ca",
+        "executionSummary": {
+          "executionOrder": 3,
+          "success": true
+        }
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "Aditya\n28\n102\njcbust\n"
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "id": "7ac49f75-6d11-4506-b257-78e8aa6a6b89",
+      "cell_type": "code",
+      "source": "class Student {\n    String name;\n    int age;\n    int rollNumber;\n    String college;\n    \n    Student(String n,int a,int  r,String c ){\n        name=n;\n        age=a ;\n        rollNumber=r ;\n        college=c ;\n        } \n\n    void markAttendence(){\n        System.out.println(\"Attendance marked by\"+name);\n    }\n}",
+      "metadata": {
+        "language": "java",
+        "id": "7ac49f75-6d11-4506-b257-78e8aa6a6b89",
+        "executionSummary": {
+          "executionOrder": 4,
+          "success": false
+        }
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "constructor Student in class Student cannot be applied to given types;\n  required: java.lang.String,int,int,java.lang.String\n  found:    no arguments\n  reason: actual and formal argument lists differ in length\nStudent s1=new Student();\n           ^-----------^\n"
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "id": "09c2ad12-ceea-45e7-bc55-14b7a861838f",
+      "cell_type": "code",
+      "source": "Student s1=new Student(\"aditya\",28,13,\"Jcbust\");\nSystem.out.println(s1.name);\nSystem.out.println(s1.age);\nSystem.out.println(s1.rollNumber);\nSystem.out.println(s1.college); ",
+      "metadata": {
+        "language": "java",
+        "id": "09c2ad12-ceea-45e7-bc55-14b7a861838f",
+        "executionSummary": {
+          "executionOrder": 5,
+          "success": false
+        }
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "constructor Student in class Student cannot be applied to given types;\n  required: java.lang.String,int,int,java.lang.String\n  found:    no arguments\n  reason: actual and formal argument lists differ in length\nStudent s1=new Student();\n           ^-----------^\naditya\n28\n13\nJcbust\n"
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "id": "ed03284d-2640-4474-b852-12307452f062",
+      "cell_type": "code",
+      "source": "import java.util.Scanner;\nSystem.out.println(\"Taking input from user\");\nScanner  sc =new Scanner(System.in);\nint a=sc.nextInt();\nScanner in=new Scanner(System.in);\nfloat  b=in.nextFloat ();\nfloat sum=a+b ;\nSystem.out.println(sum); ",
+      "metadata": {
+        "language": "java",
+        "id": "ed03284d-2640-4474-b852-12307452f062",
+        "executionSummary": {
+          "executionOrder": 6,
+          "success": false
+        }
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "Taking input from user\n"
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "id": "158e4b51-2f1e-4623-bab8-7b6ffb2f7257",
+      "cell_type": "code",
+      "source": "class Date {\n    int day, month, year;\n\n    Date(int d, int m, int y){\n        day = d;\n        month = m;\n        year = y;\n    }\n\n    Date(Date d){\n        day = d.day;\n        month = d.month;\n        year = d.year;\n    }\n\n    void display(){\n        System.out.println(day + \"/\" + month + \"/\" + year);\n    }\n}\n\nDate d1 = new Date(12,4,1954);\nDate d2 = new Date(d1);\n\nd1.display();\nd2.display();",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "12/4/1954\n12/4/1954\n"
+          },
+          "metadata": {},
+          "execution_count": null
+        }
+      ]
+    },
+    {
+      "id": "767f0887-cec1-42fc-a808-40f4d84c0ac4",
+      "cell_type": "code",
+      "source": "class Student{\n    String name;\n    int age;\n    int rollNumber;\n    static String college;\n\n    Student(String name,int age,int rollNumber){\n        this.name=name;\n        this.age=age;\n        this.rollNumber=rollNumber;\n    }\n\n}",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "b7b1d777-fe31-4d22-8d89-415a3e1d1d30",
+      "cell_type": "code",
+      "source": "Student s1 =new Student(\"Aditya\",28,101);\nStudent s2=new Student(\"Rohit\",28,102);\nStudent.college =\"IIT Guwahati\";\n    \nSystem.out.println  (\"eH\");\nSystem.out.println(s1.name + \",\" + s1.age + \",\" + s1.rollNumber + \",\" +Student.college);\n    ",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "eH\nAditya,28,101,IIT Guwahati\n"
+          },
+          "metadata": {},
+          "execution_count": null
+        }
+      ]
+    },
+    {
+      "id": "f94fdb2b-35f2-447a-b810-34212b991309",
+      "cell_type": "code",
+      "source": "class Random{\n    final double PI;\n    \n    Random(){\n        this.PI=3.14;\n    }\n}",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "cb94d7a7-0142-4944-9069-b60fe5bd69ba",
+      "cell_type": "code",
+      "source": "Random r1=new Random();\nSystem.out.println(r1.PI);",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "3.14\n"
+          },
+          "metadata": {},
+          "execution_count": null
+        }
+      ]
+    },
+    {
+      "id": "3f6a16b8-42ae-47ad-bb60-57a2f8fe053b",
+      "cell_type": "code",
+      "source": "abstract class Car{\n    void  start(){\n        System. out.println(\"Car started\"); \n    }\n    abstract void accelerate();\n    abstract void brake();\n}\n\nclass FuelCar extends Car{\n    void accelerate(){\n        System.out.println(\"Fuel Car is accelerating.\");\n}\nvoid brake(){\n    System.out.println(\"Car stops \");\n}\n}\n\nclass ElectricCar extends Car{\n    void accelerate(){\n        System.out.println(\"Car is accelerating.\");\n    }\n    void brake(){\n            System.out.println(\"Car stops\");\n    }\n}",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "id": "737d2572-7446-4f06-91a6-e5f0a5540472",
+      "cell_type": "code",
+      "source": "Car c=new FuelCar();\nc.start();\nc.accelerate();\nc.brake();",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": "Car started\nFuel Car is accelerating.\nCar stops \n"
+          },
+          "metadata": {},
+          "execution_count": null
+        }
+      ]
+    },
+    {
+      "id": "aa574cab-9df5-46ba-a742-674eb68369a4",
+      "cell_type": "markdown",
+      "source": "",
+      "metadata": {
+        "language": "markdown",
+        "id": "aa574cab-9df5-46ba-a742-674eb68369a4"
+      }
+    },
+    {
+      "id": "ca181a66-5662-4b2b-a618-af11a947b8fb",
+      "cell_type": "code",
+      "source": "git init ",
+      "metadata": {
+        "language": "java"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
